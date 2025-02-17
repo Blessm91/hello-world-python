@@ -3,6 +3,7 @@ This is the hello world program in Python
 """
 
 import sys
+import tkinter as tk
 from tkinter import messagebox
 
 # Student & Class Information
@@ -25,6 +26,14 @@ def show_student_info():
 def show_python_version():
     version_message = f"Python Version: {sys.version}"
     messagebox.showinfo("Python Version", version_message)
+
+# Create main window
+root = tk.Tk()
+root.title("HELLO WORLD")  # Set window title
+root.geometry("300x200")  # Set window size
+
+# Run the GUI event loop
+root.mainloop()
 
 # Print details
 print("\n==============================")
