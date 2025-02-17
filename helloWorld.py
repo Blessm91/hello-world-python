@@ -29,7 +29,7 @@ def show_python_version():
 
 # Create main window
 root = tk.Tk()
-root.title("HELLO WORLD")  # Set window title
+root.title("hello-world-py")  # Set window title
 root.geometry()  # Set window size
 
 # Create a label for the greeting
