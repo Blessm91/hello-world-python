@@ -16,12 +16,12 @@ student_id = "1085491"
 def show_student_info():
     info_message = (
         "==============================\n"
-        "        CLASS DETAILS        \n"
+        "               CLASS DETAILS        \n"
         "==============================\n"
         f"Class Name  : {class_name}\n"
         f"Class Code  : {class_code}\n\n"
         "==============================\n"
-        "       STUDENT DETAILS       \n"
+        "              STUDENT DETAILS       \n"
         "==============================\n"
         f"Student Name: {student_name}\n"
         f"Student ID  : {student_id}"
@@ -32,7 +32,7 @@ def show_student_info():
 def show_python_version():
     version_message = (
         "==============================\n"
-        "       PYTHON VERSION         \n"
+        "         PYTHON VERSION         \n"
         "==============================\n"
         f"Python Version: {sys.version}"
     )
@@ -42,7 +42,7 @@ def show_python_version():
 def show_greeting():
     greeting_message = (
         "==============================\n"
-        "        GREETING             \n"
+        "           GREETING             \n"
         "==============================\n"
         "Hello, World!\n"
     )
@@ -71,7 +71,7 @@ python_button = tk.Button(button_frame, text="Python Version", command=show_pyth
 
 # Place buttons side by side inside the frame
 student_button.pack(side="left", padx=10)  # Adds space between buttons
-python_button.pack(side="left")
+python_button.pack(side="left", padx=10)  # Adds space between buttons
 
 # Run the GUI event loop
 root.mainloop()
