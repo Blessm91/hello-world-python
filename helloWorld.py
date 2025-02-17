@@ -32,6 +32,23 @@ root = tk.Tk()
 root.title("HELLO WORLD")  # Set window title
 root.geometry("300x200")  # Set window size
 
+# Create a label for the greeting
+greeting_label = tk.Label(root, text="HELLO WORLD", font=("Arial", 16, "bold"))
+greeting_label.pack(pady=10)  # Centered at the top
+
+# Create a frame to hold the buttons side by side
+button_frame = tk.Frame(root)
+button_frame.pack(pady=10)  # Adds spacing below greeting
+
+# Create buttons
+student_button = tk.Button(root, text="Student Info", command=show_student_info, width=20, height=2)
+python_button = tk.Button(root, text="Python Version", command=show_python_version, width=20, height=2)
+
+# Place buttons in the window
+student_button.pack(pady=10)
+python_button.pack(pady=10)
+
+
 # Run the GUI event loop
 root.mainloop()
 
