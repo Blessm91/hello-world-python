@@ -30,7 +30,7 @@ def show_python_version():
 # Create main window
 root = tk.Tk()
 root.title("HELLO WORLD")  # Set window title
-root.geometry("300x200")  # Set window size
+root.geometry()  # Set window size
 
 # Create a label for the greeting
 greeting_label = tk.Label(root, text="HELLO WORLD", font=("Arial", 16, "bold"))
@@ -44,9 +44,9 @@ button_frame.pack(pady=10)  # Adds spacing below greeting
 student_button = tk.Button(root, text="Student Info", command=show_student_info, width=20, height=2)
 python_button = tk.Button(root, text="Python Version", command=show_python_version, width=20, height=2)
 
-# Place buttons in the window
-student_button.pack(pady=10)
-python_button.pack(pady=10)
+# Place buttons side by side inside the frame
+student_button.pack(side="left", padx=10)  # Adds space between buttons
+python_button.pack(side="left")
 
 
 # Run the GUI event loop
