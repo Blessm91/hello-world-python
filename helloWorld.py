@@ -31,7 +31,6 @@ def show_student_info():
     )
     messagebox.showinfo("Student Info", info_message)
 
-
 # Function to display Python version
 def show_python_version():
     version_message = (
@@ -42,7 +41,6 @@ def show_python_version():
     )
     messagebox.showinfo("Python Version", version_message)
 
-
 # Function to display greeting in a formatted pop-up
 def show_greeting():
     greeting_message = (
@@ -52,7 +50,6 @@ def show_greeting():
         "Hello, World!\n"
     )
     messagebox.showinfo("Greeting", greeting_message)
-
 
 # Create main window
 root = tk.Tk()
